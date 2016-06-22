@@ -35,7 +35,7 @@ a:focus {
     outline: none;
 }
 footer {
-    background-color: #565d67;padding: 45px;text-align: center;
+    background-color: #40829E;padding: 45px;text-align: center;height: 50px;
 }
 .carousel-control.left {
     background-image: none; background-image:none;background-image: none; background-image: none; filter: none; background-repeat: repeat-x;
@@ -107,4 +107,11 @@ h1 {
     height: 50px;
     width: 50px;
     padding-right: 10px;
+}
+.skill_set{
+    text-align: center;
+}
+.skill_header{
+    margin: 25px 0px 10px 0px;
+    font-variant: small-caps;
 }

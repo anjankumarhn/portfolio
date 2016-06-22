@@ -10,7 +10,6 @@
 </head>
 <body>
 	<%= render :partial => "layouts/header" %>
-<%= yield %>
 <div class="left-common">
 	<div class="col-md-3">
 			<img src="/assets/anjan.jpg" alt="Smiley face" class="img-circle" height="150" width="150">
@@ -38,6 +37,10 @@
 		<img src="/assets/aws.png" alt="Smiley face" height="150" width="200">
 		<hr>
 </div>
-
+<%= yield %>
+<footer class="">
+  <!--            <div> &copy; 2014 About.com &mdash; All rights reserved.</div>-->
+  <div class="footer-copyrights"> <span class="copyright-icon">&COPY; </span>2016 All rights reserved. </div>
+</footer>
 </body>
 </html>
