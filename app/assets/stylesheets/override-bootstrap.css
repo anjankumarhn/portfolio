@@ -87,9 +87,7 @@ h1 {
 }
 .left-common{
     float: right;
-    height: auto;
     width: 250px;
-    background-color: #E3E8EA;
     padding: 50px 0 0 50px;  
 }
 h1 {
@@ -98,7 +96,7 @@ h1 {
 }
 .follow_me{
     border: solid #fff;
-    width: 180px;
+    width: 20%;
     float: right;
     border-radius: 10px;
     margin: 30px 50px;
@@ -108,10 +106,13 @@ h1 {
     width: 50px;
     padding-right: 10px;
 }
+.grid-container{
+    width: 100%;
+}
 .skill_set{
     text-align: center;
 }
 .skill_header{
-    margin: 25px 0px 10px 0px;
+    /*margin: 25px 0px 10px 0px;*/
     font-variant: small-caps;
 }

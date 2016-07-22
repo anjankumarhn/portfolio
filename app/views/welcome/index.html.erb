@@ -1,20 +1,92 @@
-<div class="skill_set">
-	<div class="skill_header"><h3><b>Technical Specializations</b></h3></div>
+<div class="container-fluid">
+	<div class="row grid-container">
+		<div class="col-xs-9 grid">
+			<div class="skill_set">
+				<div class="skill_header">
+					<h3><b>Technical Specializations
+						</b>
+					</h3>
+				</div>
 
-<h4>Development Skills</h4>
-<p>Ruby on Rails, HTML5, CSS3, Bootstrap, Javascript, Jquery, Ajax, API's</p>
-<hr>
-<h4>Devops Skills</h4>
-<p>AWS Services, Linux, Apache, Nginx and Shell scripting</p>
-<hr>
-<h4>Databases</h4>
-<p>Postgresql, Mysql, Mongo DB and Sqlite</p>
-<hr>
-<h4>Tools used</h4>
-<p>Git, Bitbucket, Jira, Trello, Asana, Slack, Heroku</p>
-<hr>
-<h4>Certifications</h4>
-<p>AWS Solution Architect - Associate</p>
-<p>(Valid from April 6th 2016 to April 6th 2018)</p>
-<img src="/assets/aws_cert.png" alt="aws" height="350" width="600">
+				<h4>Development Skills</h4>
+				<p>Ruby on Rails, HTML5, CSS3, Bootstrap, Javascript, Jquery, Ajax, API's</p>
+				<hr>
+				<h4>Devops Skills</h4>
+				<p>AWS Services, Linux, Apache, Nginx and Shell scripting</p>
+				<hr>
+				<h4>Databases</h4>
+				<p>Postgresql, Mysql, Mongo DB and Sqlite</p>
+				<hr>
+				<h4>Tools used</h4>
+				<p>Git, Bitbucket, Jira, Trello, Asana, Slack, Heroku</p>
+				<hr>
+				<h4>Certifications</h4>
+				<p>AWS Solution Architect - Associate</p>
+				<p>(Valid from April 6th 2016 to April 6th 2018)</p>
+				<img src="/assets/aws_cert.png" alt="aws" height="100%" width="100%">
+			</div>
+		</div>
+		<div class="col-xs-3 grid" style="background-color: #E3E8EA;text-align:center;">
+			<div>
+				<div>
+					<img src="/assets/anjan.jpg" alt="Smiley face" class="img-circle" height="100%" width="80%" style="margin-top: 50px;margin-bottom: 20px;">
+					<h4>Anjan Kumar H.N</h4>
+					<p>I'm a Software Engineer, specialized in Ruby on Rails development and AWS Services. I live in India.</p>
+					<p>More <a href="https://about.me/AnjanGowda" target="_blank">About Me</a></p>
+					<hr>
+					<p>Follow me in</p>
+					<a href="https://in.linkedin.com/in/anjankumar-h-n-882166b8" target="_blank">
+					<img src="/assets/social_icons_Linkedin.png" alt="linkedin" class="img-circle" height="25%" width="25%">
+					</a>
+					&nbsp;
+					&nbsp;
+					<a href="https://www.facebook.com/anjan.gowdamandya" target="_blank">
+					<img src="assets/fb.png" alt="facebook" class="img-circle" height="23%" width="23%">
+					</a>
+					&nbsp;
+					&nbsp;
+					<a href="https://twitter.com/aknagaraja" target="_blank">
+					<img src="/assets/twitter.png" alt="twitter" class="img-circle" height="25%" width="25%">
+					</a>
+				</div>
+				<hr>
+				<p>If you need help with your AWS clound infrastructure & Ruby on Rails development, please let me know, I'll be happy if I can help.</p>
+				<img src="/assets/aws.png" alt="Smiley face" height="100%" width="100%">
+				<hr>
+				<h5 style="font-weight: bold;">Contact Details</h5>
+				<p>Name: Anjankumar H N</p>
+				<p>Phone: +91 9741393543</p>
+				<p>Skype: anjankumarhn</p>
+			</div>
+		</div>
+	</div>
 </div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+    // Select and loop the container element of the elements you want to equalise
+    $('.grid-container').each(function(){ 
+      
+      // Cache the highest
+      var highestBox = 0;
+      
+      // Select and loop the elements you want to equalise
+      $('.grid', this).each(function(){
+        
+        // If this box is higher than the cached highest then store it
+        if($(this).height() > highestBox) {
+          highestBox = $(this).height();
+        }
+      
+      });
+            
+      // Set the height of all those children to whichever was highest 
+      $('.grid',this).height(highestBox);
+                    
+    });
+
+});
+
+</script>
